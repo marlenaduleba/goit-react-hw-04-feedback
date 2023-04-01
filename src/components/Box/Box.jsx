@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import css from './Box.module.css';
 
-const Box = ({ children }) => {
+export const Box = ({ children }) => {
   return <div className={css.box}>{children}</div>;
 };
 
@@ -13,4 +13,3 @@ Box.propTypes = {
   ]).isRequired,
 };
 
-export default Box;

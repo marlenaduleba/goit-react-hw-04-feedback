@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import { PropTypes } from "prop-types";
+import { PropTypes } from 'prop-types';
 import css from './Section.module.css';
 
+export const Section = ({ title, children }) => {
+  return (
+    <div>
+      <h2 className={css.title}>{title}</h2>
+      {children}
+    </div>
+  );
+};
 
-export default class Section extends Component {
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-  };
-
-  render() {
-    return (
-      <div>
-        <h2 className={css.title}>{this.props.title}</h2>
-        {this.props.children}
-      </div>
-    );
-  }
-}
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+};
