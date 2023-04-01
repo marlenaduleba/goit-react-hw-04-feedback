@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ButtonList from 'components/ButtonList/ButtonList';
-import ButtonItem from 'components/ButtonItem/ButtonItem';
+import { ButtonList } from 'components/ButtonList/ButtonList';
+import { ButtonItem } from 'components/ButtonItem/ButtonItem';
 
 export default class FeedbackOption extends Component {
   static propTypes = {
