@@ -1,0 +1,45 @@
+.list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  
+    width: 400px;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 100px;
+  
+    padding: 5px;
+  
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  .good {
+    background-color: #6096BA;
+  }
+  
+  .neutral {
+    background-color: #E7ECEF;
+  }
+  
+  .bad {
+    background-color: #8B8C89;
+  }
+  
+  .total {
+    width: 50%;
+    margin-top: 15px;
+    background-color: #A3CEF1;
+  }
+  
+  .percent {
+    width: 50%;
+    margin-top: 15px;
+    background-color: #274C77;
+  }
